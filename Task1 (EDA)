@@ -1,0 +1,108 @@
+# CODTECH TASK-1 EXPLORATORY DATA ANALYSIS (EDA)
+
+
+# Importing Libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load the Titanic dataset
+url = "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv"
+df = pd.read_csv(url)
+
+# Display the first few rows of the dataset
+print(df.head())
+
+# 1. Understanding the Dataset
+
+# 1.1 Check the Data Types and Missing Values
+print(df.info())
+print(df.isnull().sum())
+
+# 1.2 Summary Statistics
+print(df.describe())
+print(df.describe(include=['O']))
+
+# 2. Univariate Analysis
+
+# 2.1 Distribution of Numerical Features
+
+# Histogram for Age
+plt.figure(figsize=(10, 5))
+sns.histplot(df['Age'].dropna(), kde=True)
+plt.title('Distribution of Age')
+plt.show()
+
+# Histogram for Fare
+plt.figure(figsize=(10, 5))
+sns.histplot(df['Fare'], kde=True)
+plt.title('Distribution of Fare')
+plt.show()
+
+# 2.2 Distribution of Categorical Features
+
+# Bar plot for Pclass
+plt.figure(figsize=(8, 5))
+sns.countplot(x='Pclass', data=df)
+plt.title('Passenger Class Distribution')
+plt.show()
+
+# Bar plot for Embarked
+plt.figure(figsize=(8, 5))
+sns.countplot(x='Embarked', data=df)
+plt.title('Port of Embarkation Distribution')
+plt.show()
+
+# 3. Bivariate Analysis
+
+# 3.1 Survival Rate by Passenger Class
+plt.figure(figsize=(8, 5))
+sns.barplot(x='Pclass', y='Survived', data=df)
+plt.title('Survival Rate by Passenger Class')
+plt.show()
+
+# 3.2 Correlation Matrix and Heatmap
+
+# Select only numeric columns for correlation matrix
+numeric_cols = df.select_dtypes(include=[np.number])
+
+# Compute the correlation matrix
+corr = numeric_cols.corr()
+
+# Heatmap of the correlation matrix
+plt.figure(figsize=(10, 8))
+sns.heatmap(corr, annot=True, cmap='coolwarm', fmt=".2f")
+plt.title('Correlation Matrix')
+plt.show()
+
+# 3.3 Pairwise Relationships
+sns.pairplot(df[['Survived', 'Age', 'Fare', 'Pclass']], hue='Survived')
+plt.show()
+
+# 4. Handling Missing Values and Outliers
+
+# 4.1 Handling Missing Values
+
+# Fill missing Age values with the median
+df['Age'].fillna(df['Age'].median(), inplace=True)
+
+# Fill missing Embarked values with the mode
+df['Embarked'].fillna(df['Embarked'].mode()[0], inplace=True)
+
+# 4.2 Identifying and Handling Outliers
+
+# Boxplot to identify outliers in Fare
+plt.figure(figsize=(8, 5))
+sns.boxplot(x=df['Fare'])
+plt.title('Boxplot of Fare')
+plt.show()
+
+# Handling outliers (optional, depending on the context)
+# For example, capping Fare at the 99th percentile
+fare_cap = df['Fare'].quantile(0.99)
+df['Fare'] = np.where(df['Fare'] > fare_cap, fare_cap, df['Fare'])
+
+# Conclusion and Insights
+
+print("EDA completed successfully.")
