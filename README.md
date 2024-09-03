@@ -1,9 +1,16 @@
 Name:VINAY PRATAP SINGH
+
 Company:CODTECH IT SOLUTIONS
-InternID:CT08DS6963
+
+Intern ID:CT08DS6963
+
 Domain:Data Analytics
+
 Duration: 15august to 15september2024
+
 mentor:muzammil
+
+
 
 Overview of the Project
 
@@ -46,3 +53,65 @@ The objective of this project is to perform Exploratory Data Analysis (EDA) on a
 
 ### *Conclusion:*
 The EDA process allows for a comprehensive understanding of the dataset, setting the stage for more complex analyses or model building. By visualizing data, one can uncover hidden patterns, guide hypotheses, and make data-driven decisions.
+
+
+### OUTPUT
+
+
+![Screenshot 2024-09-03 165238](https://github.com/user-attachments/assets/6dbcacfb-b279-41e9-934a-4c94f38b4f7f)
+
+![Screenshot 2024-09-03 165503](https://github.com/user-attachments/assets/e56b9098-c99c-4697-b716-b6ffe515063f)
+
+![Screenshot 2024-09-03 165536](https://github.com/user-attachments/assets/449dc67e-d932-4fde-b86d-f249148ad4dd)
+
+![Screenshot 2024-09-03 165608](https://github.com/user-attachments/assets/847af895-0f88-4bb5-a2b9-1aa2035c77c3)
+
+![Screenshot 2024-09-03 165636](https://github.com/user-attachments/assets/445eaca8-cbe3-4bbc-8fb2-114c143e0c58)
+
+![Screenshot 2024-09-03 165654](https://github.com/user-attachments/assets/c6ae065f-0095-450a-8045-14cd1c0f0833)
+
+![Screenshot 2024-09-03 165712](https://github.com/user-attachments/assets/68d9e43e-b300-4e4a-9e4e-d5643869e415)
+
+![Screenshot 2024-09-03 165730](https://github.com/user-attachments/assets/016dd0fe-7098-40cf-9587-9f66f894ba48)
+
+![Screenshot 2024-09-03 170002](https://github.com/user-attachments/assets/11b94f9f-ff7a-482c-9448-3bd63a3afe05)
+
+![Screenshot 2024-09-03 170046](https://github.com/user-attachments/assets/5d124d7e-e0e5-4f63-b9df-ae38e23bcec5)
+
+![Screenshot 2024-09-03 170120](https://github.com/user-attachments/assets/1425552c-ea24-456f-adb9-1d7ae45801c3)
+
+![Screenshot 2024-09-03 170150 - Copy (2)](https://github.com/user-attachments/assets/c729512c-6183-4014-93d6-9f329be718b5)
+
+![Screenshot 2024-09-03 170246 - Copy (2)](https://github.com/user-attachments/assets/7ddcc312-ae42-4c20-ba67-2ca36873d575)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
