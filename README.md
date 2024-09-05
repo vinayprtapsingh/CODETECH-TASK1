@@ -6,9 +6,9 @@ Intern ID:CT08DS6963
 
 Domain:Data Analytics
 
-Duration: 15august to 15september2024
+Duration: 12august to 12september 2024
 
-mentor:muzammil
+mentor:muzammil Ahmed
 
 
 
